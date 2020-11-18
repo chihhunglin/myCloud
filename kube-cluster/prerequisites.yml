@@ -1,0 +1,20 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: Disabling Swap on all nodes
+    shell: swapoff -a
+
+  - name: Commenting Swap entries in /etc/fstab
+    replace:
+     path: /etc/fstab
+     regexp: '(^/.*swap*)'
+     replace: '# \1'
+
+  - name: Commenting Swap entries in /etc/fstab
+    sysctl:
+     name: net.ipv4.ip_forward
+     value: '1'
+     sysctl_set: yes
+     state: present
+     reload: yes

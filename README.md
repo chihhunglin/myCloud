@@ -11,11 +11,11 @@
  - Ansible installed on your local machine.
 
 ### Install
-> $ ansible-playbook -i hosts prerequisites.yml
-> $ ansible-playbook -i hosts initial.yml
-> $ ansible-playbook -i hosts kube-dependencies.yml
-> $ ansible-playbook -i hosts master.yml -vvvv
-> $ ansible-playbook -i hosts workers.yml -vvvv
+> $ ansible-playbook -i hosts prerequisites.yml 
+> $ ansible-playbook -i hosts initial.yml 
+> $ ansible-playbook -i hosts kube-dependencies.yml 
+> $ ansible-playbook -i hosts master.yml -vvvv 
+> $ ansible-playbook -i hosts workers.yml -vvvv 
 
 ## References
 https://www.digitalocean.com/community/tutorials/how-to-create-a-kubernetes-cluster-using-kubeadm-on-ubuntu-18-04

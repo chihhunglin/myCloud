@@ -12,9 +12,13 @@
 
 ### Install
 > $ ansible-playbook -i hosts prerequisites.yml 
+
 > $ ansible-playbook -i hosts initial.yml 
+
 > $ ansible-playbook -i hosts kube-dependencies.yml 
+
 > $ ansible-playbook -i hosts master.yml -vvvv 
+
 > $ ansible-playbook -i hosts workers.yml -vvvv 
 
 ## References

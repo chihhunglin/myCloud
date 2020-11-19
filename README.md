@@ -11,7 +11,7 @@
  - Ansible installed on your local machine.
 
 ### Install
-** Edit IP in host **
+**Edit IP in host**
 
 > $ ansible-playbook -i hosts prerequisites.yml 
 
